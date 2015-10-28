@@ -6,6 +6,11 @@ import java.time.LocalDateTime;
 public class DateTimeEx {
     public static void main(String[] args) {
         System.out.println(LocalDateTime.now());
+        LocalDateTime time = LocalDateTime.now();
+        LocalDateTime fivedays = time.plusDays(5);
+        System.out.println(fivedays);
+        LocalDateTime weeks = time.plusWeeks(2);
+        System.out.println(weeks);
     }
 
 }
